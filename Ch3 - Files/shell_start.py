@@ -11,9 +11,9 @@ from zipfile import ZipFile
 
 def main():
     # make a duplicate of an existing file
-    if path.exists("bakkara.txt.bak"):
+    if path.exists("bakkara.txt"):
         # get the path to the file in the current directory
-        source = path.realpath("bakkara.txt.bak")
+        source = path.realpath("bakkara.txt")
         # let's make a backup copy by appending "bak" to the name
         dst = source + ".bak"
         shutil.copy(source, dst)
@@ -25,8 +25,8 @@ def main():
         #shutil.make_archive("archieve", "zip", d)
         # more fine-grained control over ZIP files
         with ZipFile("test.zip", "w") as newzip:
+            newzip.write("bakkara.txt")
             newzip.write("bakkara.txt.bak")
-            newzip.write("bakkara.txt.bak.bak")
             newzip.write("new-bakkara.txt")
       
 if __name__ == "__main__":
