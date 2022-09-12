@@ -1,0 +1,16 @@
+Total bytecount:12778
+Files list:
+--------------
+bakkara.txt
+bakkara.txt.bak
+bakkara.txt.bak.bak
+challenge_solution.py
+files_finished.py
+files_start.py
+new-bakkara.txt
+ospathutils_finished.py
+ospathutils_start.py
+shell_finished.py
+shell_start.py
+test.zip
+textfile.txt
