@@ -5,13 +5,14 @@
 
 
 # TODO: import the calendar module
-
+import calendar
 
 # TODO: create a plain text calendar
-
-
+c= calendar.TextCalendar(calendar.FRIDAY)
+print(str(c.formatmonth(2023,1,1,1)))
 # TODO: create an HTML formatted calendar
-
+calHTML=calendar.HTMLCalendar(calendar.SUNDAY)
+print(str(calHTML.formatmonth(2024,1,1)))
 
 # TODO: loop over the days of a month
 # zeroes mean that the day of the week is in an overlapping month
